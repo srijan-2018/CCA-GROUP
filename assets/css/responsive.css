@@ -7,15 +7,41 @@
 @media screen and (max-width : 1440px) {
     
 }
-@media screen and (max-width : 1299px) {
-    
+@media screen and (max-width : 1399px) {
+    .btn-social-style{
+        width: 35px;
+        padding: 5px 8px;
+    }
+    .btn-style-yellow{
+        padding: 8px 8px;
+        font-size: 14px;
+    }
+    .btn-style-blue{
+        padding: 8px 8px;
+        font-size: 14px;
+    }
+    #first-default p{
+        font-size: 2rem;
+        font-weight: 700;
+    }
 }
 @media screen and (max-width : 1199px) {
-    
+    .navelement-margin{
+        margin: 0px;
+    }
+    .display_res{
+        display: none !important;
+    }
+}
+@media screen and (max-width : 1099px) {
+    .navelement-margin{
+        margin: 0px;
+    }
 }
 @media screen and (max-width : 1024px) {
-    
+
 }
+
 @media screen and (max-width : 899px) {
     
 }

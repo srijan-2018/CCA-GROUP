@@ -6,7 +6,7 @@ window.onload = function () {
         setTimeout(function(){
             loader.style.display = "none";
         },500);
-    },1500);
+    },1000);
 };
 // pre Loader End
 
@@ -25,4 +25,101 @@ $(window).scroll(function(){
 btn.on('click',function(e){
     e.preventDefault();
     $('html, body').animate({scrollTop:0}, '300');
-})
+});
+
+
+// auto type js start
+
+$(document).ready(function(){
+    initAutoType();
+  
+  });
+  var initAutoType = function(){
+    var types = ["Explore Interests and Career With Courses","Admission Open for 2022-2023","YinyouPoet's Blog."];
+    var words = $("#first-words");
+  
+    var stopType = false;
+  
+    var index = 0;
+    var tempWords = "";
+    var isNext = false;
+    var time = 200;
+  
+    var startType = setInterval(function(){
+      if(stopType){
+        clearInterval(startType);
+      }
+      if(tempWords.length === 0){
+        if(isNext){
+          index++;
+          index = index%3;
+          isNext = false;
+        }
+        tempWords = types[index].substring(0,tempWords.length+1);
+      }else if(tempWords.length === types[index].length && isNext === false){
+        isNext = true;
+        time = 5000;
+      }else{
+        if(isNext){
+          tempWords = tempWords.substring(0,tempWords.length-1);
+          time = 150;
+        }
+        else{
+          time = 200;
+          tempWords = types[index].substring(0,tempWords.length+1);
+        }
+      }
+      words.html(tempWords);
+    },time);
+  };
+
+
+// video popup js start
+
+  $(function() {
+    $('.popup-youtube, .popup-vimeo').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+        fixedContentPos: false
+    });
+});
+
+// scroll counter
+var counted = 0;
+$(window).scroll(function() {
+
+  var oTop = $('#counter').offset().top - window.innerHeight;
+  if (counted == 0 && $(window).scrollTop() > oTop) {
+    $('.count').each(function() {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+      $({
+        countNum: $this.text()
+      }).animate({
+          countNum: countTo
+        },
+
+        {
+
+          duration: 2000,
+          easing: 'swing',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+            //alert('finished');
+          }
+
+        });
+    });
+    counted = 1;
+  }
+
+});
+
+
+

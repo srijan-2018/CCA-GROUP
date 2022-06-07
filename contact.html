@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Barlow+Condensed:wght@300&family=Cookie&family=Courgette&family=Dancing+Script&family=Lobster+Two&family=Monoton&family=Montserrat+Alternates:wght@300&family=Poppins:wght@300&family=Roboto:wght@300&family=Waterfall&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- Animation -->
     <link rel="stylesheet" href="./assets/css/aos.css">
     <link rel="stylesheet" href="./assets/css/animate.min.css">
@@ -16,27 +16,32 @@
     <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./assets/css/slick.css">
-    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link
+    rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
     <!-- Custom -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
 
-   <div class="loader">
-      <span class="loader__ring"></span>
-   </div>
-
-   <div>
-      <a id="button"></a>
-   </div>
+    <div class="loader">
+        <div class="loader-icon">
+            <img src="/images/logo/CCALogo.png" alt="">
+        </div>
+     </div>
+  
+     <div>
+        <a id="button"></a>
+     </div>
 
    <!-- header start -->
    <header class="header">
     <div class="container-fluid">
        <div class="header-main">
           <div class="logo">
-             <a href="#"><img src="./images/logo/CCAlogo-light1.png" alt="" class="img-fluid"></a>
+             <a href="index.html"><img src="./images/logo/CCAlogo-light1.png" alt="" class="img-fluid"></a>
           </div>
           <div class="open-nav-menu">
              <span></span>
@@ -50,7 +55,7 @@
             </div>
             <ul class="menu">
                <li class="menu-item menu-item-has-children">
-                  <a href="#" data-toggle="sub-menu">Home</a>
+                  <a href="index.html" data-toggle="sub-menu">Home</a>
                   <!-- <ul class="sub-menu">
                       <li class="menu-item"><a href="#">Home 1</a></li>
                       <li class="menu-item"><a href="#">Home 2</a></li>
@@ -76,12 +81,12 @@
                </li>
             </ul>
 
-            <div class="d-flex align-items-center navelement-margin">
+            <div class="d-flex align-items-center navelement-margin display_res">
                <a href="contact.html"><button class="btn-style-yellow btn-margin">ENROLL</button></a>
                <a href="contact.html"><button class="btn-style-blue btn-margin">CONTACT</button></a>
             </div>
 
-            <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center display_res">
                <button class="btn-social-style btn-margin"><i class="fab fa-facebook-f"></i></button>
                <button class="btn-social-style btn-margin"><i class="fab fa-twitter"></i></button>
                <button class="btn-social-style btn-margin"><i class="fab fa-linkedin-in"></i></button>
@@ -93,17 +98,181 @@
    </header>
    <!-- header end -->
 
-   <!-- home section start -->
-   <section class="contact-section">
+   <!-- Breadcam section start -->
+   <section class="breadcam_section">
       <div class="container">
          <div class="row">
             <div class="col-lg-12">
-
+                <h1 class="page-title">Contact us</h1>
             </div>
          </div>
       </div>
    </section>
-   <!-- home section end -->
+   <!-- Breadcam section end -->
+
+   <!-- Breadcam-link section start -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 breadcam_link">
+                    <ul>
+                       <li><a href="index.html">Home</a></li>
+                       <li><i class="fa-solid fa-caret-right"></i></li>
+                       <li><a href="contact.html">Contact Us</a></li>  
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+   <!-- Breadcam-link section End -->
+
+   <!-- Breadcam-link section start -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <img src="/images/contact-us-img-1.jpg" alt="">
+                </div>
+                <div class="col-lg-8 col-md-6 col-12 contact_box_bg">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-6 col-12">
+                            <div class="box_text">
+                                <h2>Welcome to School</h2>
+                            </div>
+                            <div class="contact_list_style">
+                                <p>Hillsborough Campus Main Office</p>
+                                <ul>
+                                    <li><i class="fa-solid fa-circle-dot"></i> Email: ed@schoool.com</li>
+                                    <li><i class="fa-solid fa-circle-dot"></i> Phone: 516-441-4300</li>
+                                    <li><i class="fa-solid fa-circle-dot"></i> Contact Person: Tim Burney</li>
+                                </ul>
+                            </div>
+                            <div class="contact_list_style">
+                                <p>Admissions</p>
+                                <ul class="contact_list_style">
+                                    <li><i class="fa-solid fa-circle-dot"></i> Email: ed@schoool.com</li>
+                                    <li><i class="fa-solid fa-circle-dot"></i> Phone: 516-441-4300</li>
+                                    <li><i class="fa-solid fa-circle-dot"></i> Contact Person: Tim Burney</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-6 col-12 contact_box">
+                            <div class="box_text">
+                                <h4>Working Hours</h4>
+                            </div>
+
+                            <div class="border_buttom">
+                                <div class="breadcam_link">
+                                    <ul>
+                                        <li class="p-0"><i class="fa-solid fa-caret-right"></i></li>
+                                        <li class="flex-direction-column">
+                                            <a href="contact.html" class="text_style">MONDAY</a>
+                                            <a>8:00 - 16:00</a>
+                                        </li>  
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                            <div class="border_buttom">
+                                <div class="breadcam_link">
+                                    <ul>
+                                        <li class="p-0"><i class="fa-solid fa-caret-right"></i></li>
+                                        <li class="flex-direction-column">
+                                            <a href="contact.html" class="text_style">TUESDAY</a>
+                                            <a>8:00 - 16:00</a>
+                                        </li>  
+                                    </ul>
+                                </div>
+                            </div>
+                            
+
+                            <div class="border_buttom">
+                                <div class="breadcam_link">
+                                    <ul>
+                                        <li class="p-0"><i class="fa-solid fa-caret-right"></i></li>
+                                        <li class="flex-direction-column">
+                                            <a href="contact.html" class="text_style">WEDNESDAY</a>
+                                            <a>8:00 - 16:00</a>
+                                        </li>  
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                            <div class="border_buttom" style="border: none;">
+                                <div class="breadcam_link">
+                                    <ul>
+                                        <li class="p-0"><i class="fa-solid fa-caret-right"></i></li>
+                                        <li class="flex-direction-column">
+                                            <a href="contact.html" class="text_style">THURSDAY</a>
+                                            <a>8:00 - 16:00</a>
+                                        </li>  
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   <!-- Breadcam-link section End -->
+
+
+   <!-- Map & Contact section start -->
+    <section class="mt-4">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.186471870975!2d88.42869351534893!3d22.572128038675483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89deb47f92069%3A0xac52fad7b17e7144!2sAchieveX%20Solutions%20Private%20Limited!5e0!3m2!1sen!2sin!4v1654600792164!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-lg-8 col-md-6 col-12 contact_box_bg">
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div method="post" class="m-0">
+                                    <p><label class="label"> Student Name<br>
+                                            <span class=""><input type="text" name="your-name" value="" size="40"
+                                                    class="form_ctrl" aria-required="true" aria-invalid="false"></span>
+                                        </label></p>
+                                    <p><label class="label"> Your Email<br>
+                                            <span class=""><input type="email" name="your-email" value="" size="40"
+                                                    class="form_ctrl" aria-required="true" aria-invalid="false"></span>
+                                        </label></p>
+                                    <p><label class="label"> Preferred Phone Number<br>
+                                            <span class=""><input type="text" name="your-phone" value="" size="40"
+                                                    class="form_ctrl" aria-required="true" aria-invalid="false"></span>
+                                        </label>
+                                    </p>
+    
+                                    <div class="" aria-hidden="true"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div method="post" class="m-0">
+                                    <p>
+                                        <label class="label"> Student Name<br>
+                                            <span class="">
+                                                <textarea cols="40" rows="10" class="text_area_ctrl"></textarea>
+                                            </span> 
+                                        </label>
+                                    </p>
+                                    <p><button class="submit_btn" style="width:100%">Send</button></p>
+                                    <div class="" aria-hidden="true"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+   <!-- Map & Contact section End -->
 
 
 
@@ -111,8 +280,7 @@
 
 
 
-
-   <!-- home section start -->
+   <!-- Footer section start -->
    <div class="separator"></div>
    <footer id="footer-4-cols" class="site-footer">
        <div class="container">
@@ -185,30 +353,34 @@
            </div>
        </div>
    </footer>
-   <!-- home section end -->
+   <!-- Footer section end -->
 
 
 
 
 
-    <script src="./assets/js/jquery-3.6.0.min.js"></script>
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/c9973c72b2.js" crossorigin="anonymous"></script>
-    <script src="./assets/js/isotope.pkgd.js"></script>
-    <!-- Animation -->
-    <script src="./assets/js/aos.js"></script>
-    <script src="./assets/js/wow.min.js"></script>
-    <!-- slider  -->
-    <script src="./assets/js/owl.carousel.min.js"></script>
-    <script src="./assets/js/slick.min.js"></script>
-    <script src="./assets/js/swiper-bundle.min.js"></script>
-    <!-- Custom -->
-    <script src="./assets/js/header-menu.js"></script>
-    <script src="./assets/js/script.js"></script>
-    
-    <script>
-        // AOS.init();
-        // new WOW().init();
-    </script>
+   <script src="./assets/js/jquery-3.6.0.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="./assets/js/isotope.pkgd.js"></script>
+   <!-- Animation -->
+   <script src="./assets/js/aos.js"></script>
+   <script src="./assets/js/wow.min.js"></script>
+   <!-- slider  -->
+   <script src="./assets/js/owl.carousel.min.js"></script>
+   <script src="./assets/js/slick.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+   <!-- Custom -->
+   <script src="./assets/js/header-menu.js"></script>
+   <script src="./assets/js/script.js"></script>
+   
+   <script>
+       // AOS.init();
+       // new WOW().init();
+   </script>
+
+
 </body>
 </html>
