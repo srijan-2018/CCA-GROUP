@@ -87,6 +87,29 @@ $(document).ready(function(){
     });
 });
 
+// Accordion js start
+$(document).ready(function () {
+  $('h2').on("click", function(){
+  let clickedData = $(this).data("parent");
+
+      if($(this).parent('.accordion-item').hasClass("active")){
+       
+      $(this).siblings(".accordion-body").slideDown(200);
+     
+  }
+  else{
+      // alert("#"+clickedData + " .accordion-body");
+
+      $("#"+clickedData + " .accordion-body").slideUp(300);
+      $("#"+clickedData + " .accordion-item").removeClass("active");
+      $(this).siblings(".accordion-body").slideDown();
+      $(this).parent(".accordion-item").addClass("active");
+  }
+
+
+
+})
+});
 
 
 
